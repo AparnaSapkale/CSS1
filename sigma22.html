@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box sizing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+    /* background-color: aquamarine; */
+            background-color: aqua;
+    /* width: 2048px; */
+            width: 50vw;
+    /* margin:auto -> is become auto centered this is only applycable  for block level element not for inline element */
+            margin: auto;
+
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: 25px auto;
+            font-size: 18px;
+            min-height: 80vh;
+        }
+        .container p{
+            /* font-size: 2em; */
+            /* root ke font size ka double kr do */
+            font-size: 2rem;
+        }
+        .myconta{
+            /* box-sizing: border-box; */
+            margin: auto;
+            border: 2px solid black;
+            color: white;
+            background-color: red;
+            font-size: 18px;
+            width: 100vmin;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a boxs
+    </div>
+    <div class="container">
+        <p>
+            this is container Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel numququaerat similique voluptates dolor dolorum perferendis reprehenderit consectetur corrupti soluta ad, dignissimos vitae neque nobis eveniet corporis sed quo quos nevoluptatem quasi pariatur. Hic sint corporis recusandae voluptas cumque. Dignissimos eaqiusto enim earum, neque, minima numquam, similique corporis saepe reprehenderit itaque!
+        </p>
+    </div>
+    <div class="myconta">
+        this is my another div container
+    </div>
+</body>
+</html>

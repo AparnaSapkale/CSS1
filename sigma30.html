@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --color: hotpink;
+            --seccolor: pink;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: var(--color);
+            /* background-color: yellow; */
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+        }
+        .container{
+            /* if variable not found then blue color will be applying */
+            background-color: var(--seccolor,blue);
+            /* background-color: yellowgreen; */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sequi necessitatibus ipsum consequatur? Libero facilis, culpa voluptates quis laudantium eaque consectetur enim placeat!
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Transition</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .container {
+            height: 50vh;
+            width: 50vw;
+            background-color: hotpink;
+        }
+        .box {
+            height: 5vh;
+            width: 5vw;
+            background-color: red;
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            transition-delay:2s;
+        }
+        .translate {
+            transform: translateX(10vw) translateY(10vh);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate">
+            box
+        </div>
+    </div>
+</body>
+
+</html>

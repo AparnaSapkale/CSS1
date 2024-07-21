@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL in CSS</title>
+    <style>
+        /* here universal selector use for reseting the margin and padding  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+            
+        }
+        .box1{
+            color: red;
+            padding: 50px;
+            margin: 20px;
+            border: 2px solid black;
+        }
+        .box2{
+            color: yellow;
+            padding: 50px;
+            margin: 20px;
+            border: 2px solid black;
+            height: 100px;
+            /* if we not write box sizing then only contents heigth is 100px but if we add box sizing then addition of contain + padding + border is equal to the whole height is 100px */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- we can add multiple classes in container by seperating them via giving space -->
+    <div class="box box1">I am a box</div>
+    <div class="box box2">i am another box</div>
+</body>
+</html>
